@@ -54,7 +54,7 @@ public class SpringTest
     * @author ZhongHanlin
     * @throws
      */
-//    @Test
+    @Test
     public void annotation(){  
         ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");  
         UserService userService = (UserService) ctx.getBean("userService");  
@@ -70,7 +70,7 @@ public class SpringTest
     * @author ZhongHanlin
     * @throws
      */
-    @Test  
+//    @Test  
     public void aopTest(){  
         ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");  
         AopService aopService = (AopService) ctx.getBean("aopService");  
